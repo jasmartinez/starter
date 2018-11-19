@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "title": "Primer Elemento",
+    "description": "pick up milk",
+    "complete": true,
+    "canceled": true,
+    "category":"categoryA",
+    "date": 1389878466730
+  },
+  {
+    "id": 2,
+    "title": "Segundo Elemento",
+    "description": "learn backbone",
+    "complete": false,
+    "canceled": false,
+    "category":"categoryA",
+    "date": 1389988926901
+  },
+  {
+    "id": 3,
+    "title": "Tercer Elemento",
+    "description": "go for a run",
+    "complete": false,
+    "canceled": false,
+    "category":"categoryB",
+    "date": 1389992494240
+  },
+  {
+    "id": 4,
+    "title": "Cuarto Elemento",
+    "description": "pick up milk",
+    "complete": true,
+    "canceled": true,
+    "category":"categoryB",
+    "date": 1389878466730
+  }
+]

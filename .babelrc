@@ -1,0 +1,22 @@
+{
+    "presets":["react","stage-0"],
+    "comments": true,
+    "plugins": [
+                "transform-decorators-legacy",
+                "transform-class-properties",
+                "transform-object-rest-spread",
+                [
+                  "module-resolver", {
+                      "root": ["./src"],
+                      "extensions": [".js"],
+                      "alias": {
+                        "modulo":"./src/js/moduloTest/index.js",
+                        "services":"./src/js/services/services.js",
+                        "components":"./src/js/components/index.js",
+                        "reducers":"./src/js/reducers/index.js",
+                        "utils":"./src/js/utils/index.js"
+                       }
+                    }
+                ]
+              ]
+}

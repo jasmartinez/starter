@@ -1,0 +1,30 @@
+{
+  "assetsByChunkName": {
+    "commons-app": [
+      "commons-app.ca8c7c.bundle.js",
+      "commons-app.ca8c7c.bundle.js.map"
+    ],
+    "pagina1/pagina1Container": [
+      "pagina1/pagina1Container.809361.bundle.js",
+      "pagina1/pagina1Container.809361.bundle.js.map"
+    ],
+    "home/homeContainer": [
+      "home/homeContainer.89f025.bundle.js",
+      "home/homeContainer.89f025.bundle.js.map"
+    ],
+    "pagina1/pagina1Reducer": [
+      "pagina1/pagina1Reducer.63b8bb.bundle.js",
+      "pagina1/pagina1Reducer.63b8bb.bundle.js.map"
+    ],
+    "home/homeReducer": [
+      "home/homeReducer.84aff3.bundle.js",
+      "home/homeReducer.84aff3.bundle.js.map"
+    ],
+    "app": [
+      "app.bundle.js",
+      "css/app.css",
+      "app.bundle.js.map",
+      "css/app.css.map"
+    ]
+  }
+}
