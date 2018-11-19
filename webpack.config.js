@@ -10,6 +10,8 @@ module.exports = {
   entry: {
     "vendor":[
       "jquery",
+      "underscore",
+      "backbone",
     ],
     'app' :[
       './src/js/index',
@@ -25,6 +27,8 @@ module.exports = {
     alias:
     { 
       "jquery": path.resolve(__dirname,"node_modules/jquery/dist/jquery.min.js"),
+      "underscore": path.resolve(__dirname,"node_modules/underscore/underscore-min.js"),
+      "backbone": path.resolve(__dirname,"node_modules/backbone/backbone-min.js"),
       "popper":path.resolve(__dirname,"node_modules/popper.js/dist/popper.min.js"),
       "tether":path.resolve(__dirname,"node_modules/tether/dist/js/tether.min.js")
     }
@@ -161,6 +165,7 @@ module.exports = {
     new webpack.ProvidePlugin({
       "$":"jquery",
       "jQuery":"jquery",
+      "_":"underscore",
     }),
     new webpack.LoaderOptionsPlugin({
       postcss: [autoprefixer],
