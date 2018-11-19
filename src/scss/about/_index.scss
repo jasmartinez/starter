@@ -1,0 +1,11 @@
+@media screen and  (max-width: 320px) {
+    @import "./mobile/index";
+}
+
+@media screen and  (min-width : 321px) and (max-width: 920px) {
+    @import "./tablet/index";
+}
+
+@media screen and (min-width : 921px) {
+    @import "./desktop/index"; 
+}
