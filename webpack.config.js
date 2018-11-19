@@ -8,6 +8,9 @@ var autoprefixer = require('autoprefixer');
 module.exports = {
   context:__dirname,
   entry: {
+    "vendor":[
+      "jquery",
+    ],
     'app' :[
       './src/js/index',
       './src/scss/main.scss',
@@ -19,9 +22,26 @@ module.exports = {
   },
   resolve: {
     extensions: ['*', '.js','.scss'],
+    alias:
+    { 
+      "jquery": path.resolve(__dirname,"node_modules/jquery/dist/jquery.min.js"),
+      "popper":path.resolve(__dirname,"node_modules/popper.js/dist/popper.min.js"),
+      "tether":path.resolve(__dirname,"node_modules/tether/dist/js/tether.min.js")
+    }
   },
   module: {
     rules: [
+      {
+        test: /bootstrap\/dist\/js\/umd\//,
+        use: [{
+          loader: 'imports-loader',
+          options: {
+            jQuery: 'jquery',
+            Popper:'Popper',
+            Tether:'tether'
+          }
+        }]
+      },
       {
         test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
         loader: "url-loader?limit=10000&mimetype=application/font-woff"
@@ -141,7 +161,6 @@ module.exports = {
     new webpack.ProvidePlugin({
       "$":"jquery",
       "jQuery":"jquery",
-      "_":"underscore",
     }),
     new webpack.LoaderOptionsPlugin({
       postcss: [autoprefixer],

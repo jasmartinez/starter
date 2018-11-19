@@ -4,5 +4,6 @@ export default class MiClase{
   }
   saluda(){
     console.log("saludos");
+    console.log($('body'));
   }
 };
