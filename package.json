@@ -1,0 +1,22 @@
+{
+  "name": "starter",
+  "version": "1.0.0",
+  "description": "cambio en el readme",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jasmartinez/starter.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jasmartinez/starter/issues"
+  },
+  "homepage": "https://github.com/jasmartinez/starter#readme",
+  "dependencies": {
+    "rxjs": "^6.5.2"
+  }
+}
