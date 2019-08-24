@@ -17,7 +17,7 @@ pipeline {
         }
         stage('Copy artifacts') { 
             steps {
-                sh 'cp node_modules ../../../compartida' 
+                sh 'cp -R node_modules ../../../compartida' 
             }
         }
     }
