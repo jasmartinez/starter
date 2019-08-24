@@ -17,13 +17,7 @@ pipeline {
         }
         stage('Copy artifacts') { 
             steps {
-                sh 'pwd' 
-                sh 'ls'
-                sh 'cd ..'
-                sh 'pwd'
-                sh 'ls'
-                unstash 'dependencies'
-                sh 'ls'
+                sh 'cp node_modules ../../../compartida' 
             }
         }
     }
