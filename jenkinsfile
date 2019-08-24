@@ -12,6 +12,18 @@ pipeline {
             steps {
                 sh 'npm install' 
                 sh 'ls'
+                stash includes: 'node_modules', name: 'dependencies' 
+            }
+        }
+        stage('Copy artifacts') { 
+            steps {
+                sh 'pwd' 
+                sh 'ls'
+                sh 'cd ..'
+                sh 'pwd'
+                sh 'ls'
+                unstash 'dependencies'
+                sh 'ls'
             }
         }
     }
